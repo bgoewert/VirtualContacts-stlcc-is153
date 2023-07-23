@@ -51,7 +51,6 @@ This is a Virtual Contact Management System made for Week 7 of STLCC IS 153. The
 5. Update the DisplayPersonDetails to show "Contact Details" instead of "Person Details."
     - This method should also be updated to print out the street address.
 
-
 ## Lab 4B
 
 Unfortunately I initialized this repo after completeing this. So the specifc solutions for parts 1-3 of the lab are not availble here. However, I do have them stored in a seperate private repo for this class if needed.
@@ -64,12 +63,12 @@ WinForms application for the Virtual Contact Management System designed in the l
 
 1. Winforms (.NET Core)
 2. User Interface
-	- [ ] Label or title of the application name "Virtual Contact Management System".
+	- [x] Label or title of the application name "Virtual Contact Management System".
 	- Buttons for:
-		- [ ] "Create New Contact"
-		- [ ] "View All Contacts"
-		- [ ] "Search Contact"
-		- [ ] "Exit"
+		- [x] "Create New Contact"
+		- [x] "View All Contacts"
+		- [x] "Search Contact"
+		- [x] "Exit"
 	- (Not Required) Any other controls and layouts to enhance user expierence.
 3. Functionality
 	- Create New Contact
