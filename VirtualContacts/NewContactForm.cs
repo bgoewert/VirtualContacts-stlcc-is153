@@ -31,7 +31,8 @@ namespace VirtualContacts
                 else throw new Exception("Please enter a Phone Number.");
 
                 // Validate and set the contact email address
-                if (IsValidEmail(txtEmail.Text)) newContact.EmailAddress = txtEmail.Text;
+                if (IsValidEmail(txtEmail.Text))
+                    newContact.EmailAddress = txtEmail.Text;
                 else throw new Exception("Email Address is invalid. Please enter a valid Email Address.");
 
                 // Set the preferred contact method
@@ -41,6 +42,19 @@ namespace VirtualContacts
                     newContact.PreferredContactMethod = preferredContactMethod;
                 }
                 else throw new Exception("Please selected a Preferred Contact Method.");
+
+                // Set the day of birth
+                if (cboDayOfBirth.SelectedItem is not null)
+                {
+                    DayOfWeek.TryParse(cboDayOfBirth.SelectedItem.ToString(), out DayOfWeek dayOfBirth);
+                    newContact.DayOfBirth = dayOfBirth;
+                }
+                else throw new Exception("Please select a Day of Birth");
+
+                // Set the street address
+                if (txtStreetAddress.Text != "")
+                    newContact.StreetAddress = txtStreetAddress.Text;
+                else throw new Exception("Please enter a Street Address.");
 
                 // Add to collection
                 MainForm.Contacts.Add(newContact.Name, newContact);

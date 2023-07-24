@@ -1,5 +1,7 @@
 ﻿namespace VirtualContacts
 {
+    enum DayOfWeek { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+
     internal struct Contact
     {
         public string Name;
@@ -7,5 +9,7 @@
         public string PhoneNumber;
         public string EmailAddress;
         public string PreferredContactMethod;
+        public DayOfWeek DayOfBirth;
+        public string StreetAddress;
     }
 }

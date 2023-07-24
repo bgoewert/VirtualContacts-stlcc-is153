@@ -39,12 +39,16 @@
             cboPreferredContactMethod = new ComboBox();
             numAge = new NumericUpDown();
             txtPhone = new MaskedTextBox();
+            label6 = new Label();
+            txtStreetAddress = new TextBox();
+            cboDayOfBirth = new ComboBox();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)numAge).BeginInit();
             SuspendLayout();
             // 
             // btnAddContact
             // 
-            btnAddContact.Location = new Point(12, 244);
+            btnAddContact.Location = new Point(12, 329);
             btnAddContact.Name = "btnAddContact";
             btnAddContact.Size = new Size(114, 23);
             btnAddContact.TabIndex = 6;
@@ -136,12 +140,49 @@
             txtPhone.Size = new Size(145, 23);
             txtPhone.TabIndex = 3;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(12, 273);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 15);
+            label6.TabIndex = 12;
+            label6.Text = "Street Address";
+            // 
+            // txtStreetAddress
+            // 
+            txtStreetAddress.Location = new Point(12, 291);
+            txtStreetAddress.Name = "txtStreetAddress";
+            txtStreetAddress.Size = new Size(227, 23);
+            txtStreetAddress.TabIndex = 11;
+            // 
+            // cboDayOfBirth
+            // 
+            cboDayOfBirth.FormattingEnabled = true;
+            cboDayOfBirth.Items.AddRange(new object[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" });
+            cboDayOfBirth.Location = new Point(12, 247);
+            cboDayOfBirth.Name = "cboDayOfBirth";
+            cboDayOfBirth.Size = new Size(145, 23);
+            cboDayOfBirth.TabIndex = 13;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(12, 229);
+            label7.Name = "label7";
+            label7.Size = new Size(69, 15);
+            label7.TabIndex = 14;
+            label7.Text = "Day of Birth";
+            // 
             // NewContactForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(251, 279);
-            ControlBox = false;
+            ClientSize = new Size(258, 364);
+            Controls.Add(cboDayOfBirth);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(txtStreetAddress);
             Controls.Add(txtPhone);
             Controls.Add(numAge);
             Controls.Add(cboPreferredContactMethod);
@@ -178,5 +219,9 @@
         private ComboBox cboPreferredContactMethod;
         private NumericUpDown numAge;
         private MaskedTextBox txtPhone;
+        private Label label6;
+        private TextBox txtStreetAddress;
+        private ComboBox cboDayOfBirth;
+        private Label label7;
     }
 }
