@@ -24,5 +24,11 @@
                 Application.Exit();
             }
         }
+
+        private void btnViewAllContacts_Click(object sender, EventArgs e)
+        {
+            ViewContactsForm viewContactsForm = new ViewContactsForm();
+            viewContactsForm.ShowDialog();
+        }
     }
 }

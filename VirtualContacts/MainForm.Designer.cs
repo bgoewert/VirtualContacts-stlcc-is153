@@ -53,6 +53,7 @@
             btnViewAllContacts.TabIndex = 1;
             btnViewAllContacts.Text = "View All Contacts";
             btnViewAllContacts.UseVisualStyleBackColor = true;
+            btnViewAllContacts.Click += btnViewAllContacts_Click;
             // 
             // btnSearchContact
             // 

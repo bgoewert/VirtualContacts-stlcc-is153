@@ -79,7 +79,7 @@ WinForms application for the Virtual Contact Management System designed in the l
 				- [x] Create instance of "Contact" struct
 				- [x] Add to contact list and close form
 	- View All Contacts
-		- [ ] On click, open "ViewContactsForm"
+		- [x] On click, open "ViewContactsForm"
 		- ViewContactsForm
 			- [ ] ListView or GridView of *all* "Contact" details
 			- [ ] Display "No Saved Contacts" if empty
