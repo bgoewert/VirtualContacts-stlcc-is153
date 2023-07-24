@@ -53,7 +53,7 @@ This is a Virtual Contact Management System made for Week 7 of STLCC IS 153. The
 
 ## Lab 4B
 
-Unfortunately I initialized this repo after completeing this. So the specifc solutions for parts 1-3 of the lab are not availble here. However, I do have them stored in a seperate private repo for this class if needed.
+Unfortunately I initialized this repo after completeing this. So, the specifc solutions for parts 1-3 of the lab are not availble here. However, if needed, I do have them stored in a seperate private repo for this class.
 
 ## Final Exam
 
