@@ -9,5 +9,11 @@
         {
             InitializeComponent();
         }
+
+        private void btnCreateNewContact_Click(object sender, EventArgs e)
+        {
+            NewContactForm newContactForm = new NewContactForm();
+            newContactForm.ShowDialog();
+        }
     }
 }

@@ -72,12 +72,12 @@ WinForms application for the Virtual Contact Management System designed in the l
 	- (Not Required) Any other controls and layouts to enhance user expierence.
 3. Functionality
 	- Create New Contact
-		- [ ] On click, open "NewContactForm"
+		- [x] On click, open "NewContactForm"
 		- NewContactForm
-			- [ ] "Add Contact" button
-				- [ ] Input validation
-				- [ ] Create instance of "Contact" struct
-				- [ ] Add to contact list and close form
+			- [x] "Add Contact" button
+				- [x] Input validation
+				- [x] Create instance of "Contact" struct
+				- [x] Add to contact list and close form
 	- View All Contacts
 		- [ ] On click, open "ViewContactsForm"
 		- ViewContactsForm

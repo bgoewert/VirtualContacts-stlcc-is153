@@ -32,20 +32,22 @@
             btnViewAllContacts = new Button();
             btnSearchContact = new Button();
             btnExit = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnCreateNewContact
             // 
-            btnCreateNewContact.Location = new Point(12, 12);
+            btnCreateNewContact.Location = new Point(98, 62);
             btnCreateNewContact.Name = "btnCreateNewContact";
             btnCreateNewContact.Size = new Size(145, 23);
             btnCreateNewContact.TabIndex = 0;
             btnCreateNewContact.Text = "Create New Contact";
             btnCreateNewContact.UseVisualStyleBackColor = true;
+            btnCreateNewContact.Click += btnCreateNewContact_Click;
             // 
             // btnViewAllContacts
             // 
-            btnViewAllContacts.Location = new Point(12, 41);
+            btnViewAllContacts.Location = new Point(98, 91);
             btnViewAllContacts.Name = "btnViewAllContacts";
             btnViewAllContacts.Size = new Size(145, 23);
             btnViewAllContacts.TabIndex = 1;
@@ -54,7 +56,7 @@
             // 
             // btnSearchContact
             // 
-            btnSearchContact.Location = new Point(12, 70);
+            btnSearchContact.Location = new Point(98, 120);
             btnSearchContact.Name = "btnSearchContact";
             btnSearchContact.Size = new Size(145, 23);
             btnSearchContact.TabIndex = 2;
@@ -63,26 +65,38 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(12, 99);
+            btnExit.Location = new Point(98, 149);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(145, 23);
             btnExit.TabIndex = 3;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(318, 25);
+            label1.TabIndex = 4;
+            label1.Text = "Virtual Contact Management System";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(335, 210);
+            ClientSize = new Size(342, 210);
+            Controls.Add(label1);
             Controls.Add(btnExit);
             Controls.Add(btnSearchContact);
             Controls.Add(btnViewAllContacts);
             Controls.Add(btnCreateNewContact);
             MaximizeBox = false;
             Name = "MainForm";
-            Text = "Virtual Contact Management System";
+            Text = "VCMS";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -91,5 +105,6 @@
         private Button btnViewAllContacts;
         private Button btnSearchContact;
         private Button btnExit;
+        private Label label1;
     }
 }
