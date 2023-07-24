@@ -47,9 +47,22 @@ namespace VirtualContacts
             }
             else
             {
-                lstContacts.Columns.Add("Name", 150);
+                //lstContacts.Columns.Add("Name", 150);
+                lstContacts.View = View.List;
                 lstContacts.Items.Add(new ListViewItem("No Saved Contacts"));
             }
+        }
+
+        private void lstContacts_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // If the Escape key is pressed, close form.
+            if (e.KeyChar == (char)Keys.Escape)
+                Close();
+        }
+
+        private void ViewContactsForm_Load(object sender, EventArgs e)
+        {
+            lstContacts.Focus();
         }
     }
 }

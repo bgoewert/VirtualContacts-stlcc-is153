@@ -63,6 +63,7 @@
             btnSearchContact.TabIndex = 2;
             btnSearchContact.Text = "Search Contact";
             btnSearchContact.UseVisualStyleBackColor = true;
+            btnSearchContact.Click += btnSearchContact_Click;
             // 
             // btnExit
             // 

@@ -83,12 +83,16 @@ WinForms application for the Virtual Contact Management System designed in the l
 		- ViewContactsForm
 			- [x] ListView or GridView of *all* "Contact" details
 			- [x] Display "No Saved Contacts" if empty
+			- Also added close on key press (Escape)
 	- Search Contact
-		- [ ] On click, open "SearchContactForm"
+		- [x] On click, open "SearchContactForm"
 		- SearchContactForm
-			- [ ] "txtContactName" to search for a contact by name
-			- [ ] If found, display matching contact in "ContactForm"
-			- [ ] If no match found, display MessageBox "No Contact found matching that name."
+			- [x] "txtContactName" to search for a contact by name
+				- Also added placeholder text "Search by Contact Name..."
+				- Also added search on key press (Enter and Space)
+				- Also added close on key press (Escape)
+			- [x] If found, display matching contact details in a MessageBox
+			- [x] If no match found, display MessageBox "No Contact found matching that name."
 	- Exit
 		- [x] On click, Close application.
 		- [x] (Optional) Confirmation before exiting.

@@ -40,6 +40,7 @@
             lstContacts.TabIndex = 0;
             lstContacts.UseCompatibleStateImageBehavior = false;
             lstContacts.View = View.Details;
+            lstContacts.KeyPress += lstContacts_KeyPress;
             // 
             // ViewContactsForm
             // 
@@ -49,6 +50,7 @@
             Controls.Add(lstContacts);
             Name = "ViewContactsForm";
             Text = "View All Contacts";
+            Load += ViewContactsForm_Load;
             ResumeLayout(false);
         }
 

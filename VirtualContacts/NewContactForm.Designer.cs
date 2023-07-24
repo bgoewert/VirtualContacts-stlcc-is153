@@ -51,7 +51,7 @@
             btnAddContact.Location = new Point(12, 329);
             btnAddContact.Name = "btnAddContact";
             btnAddContact.Size = new Size(114, 23);
-            btnAddContact.TabIndex = 6;
+            btnAddContact.TabIndex = 8;
             btnAddContact.Text = "Add Contact";
             btnAddContact.UseVisualStyleBackColor = true;
             btnAddContact.Click += btnAddContact_Click;
@@ -154,7 +154,7 @@
             txtStreetAddress.Location = new Point(12, 291);
             txtStreetAddress.Name = "txtStreetAddress";
             txtStreetAddress.Size = new Size(227, 23);
-            txtStreetAddress.TabIndex = 11;
+            txtStreetAddress.TabIndex = 7;
             // 
             // cboDayOfBirth
             // 
@@ -163,7 +163,7 @@
             cboDayOfBirth.Location = new Point(12, 247);
             cboDayOfBirth.Name = "cboDayOfBirth";
             cboDayOfBirth.Size = new Size(145, 23);
-            cboDayOfBirth.TabIndex = 13;
+            cboDayOfBirth.TabIndex = 6;
             // 
             // label7
             // 

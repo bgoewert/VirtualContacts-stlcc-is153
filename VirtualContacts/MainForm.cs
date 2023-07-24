@@ -16,19 +16,22 @@
             newContactForm.ShowDialog();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            DialogResult confirm = MessageBox.Show("Are you sure you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo);
-            if (confirm == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
         private void btnViewAllContacts_Click(object sender, EventArgs e)
         {
             ViewContactsForm viewContactsForm = new ViewContactsForm();
             viewContactsForm.ShowDialog();
+        }
+
+        private void btnSearchContact_Click(object sender, EventArgs e)
+        {
+            SearchContactForm searchContactForm = new SearchContactForm();
+            searchContactForm.ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Are you sure you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes) Application.Exit();
         }
     }
 }
