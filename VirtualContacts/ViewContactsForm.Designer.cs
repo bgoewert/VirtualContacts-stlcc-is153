@@ -36,7 +36,7 @@
             lstContacts.Dock = DockStyle.Fill;
             lstContacts.Location = new Point(0, 0);
             lstContacts.Name = "lstContacts";
-            lstContacts.Size = new Size(722, 239);
+            lstContacts.Size = new Size(784, 241);
             lstContacts.TabIndex = 0;
             lstContacts.UseCompatibleStateImageBehavior = false;
             lstContacts.View = View.Details;
@@ -45,7 +45,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(722, 239);
+            ClientSize = new Size(784, 241);
             Controls.Add(lstContacts);
             Name = "ViewContactsForm";
             Text = "View All Contacts";

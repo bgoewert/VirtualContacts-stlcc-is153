@@ -20,10 +20,10 @@ namespace VirtualContacts
             {
                 // Create columns
                 lstContacts.Columns.Add("Name", 150);
-                lstContacts.Columns.Add("Age");
+                lstContacts.Columns.Add("Age", 50);
                 lstContacts.Columns.Add("PhoneNumber", 100);
-                lstContacts.Columns.Add("EmailAddress", 100);
-                lstContacts.Columns.Add("PreferredContactMethod", 180);
+                lstContacts.Columns.Add("EmailAddress", 120);
+                lstContacts.Columns.Add("PreferredContactMethod", 160);
                 lstContacts.Columns.Add("DayOfBirth", 80);
                 lstContacts.Columns.Add("StreetAddress", 100);
 
@@ -45,7 +45,8 @@ namespace VirtualContacts
                     lstContacts.Items.Add(item);
                 }
             }
-            else {
+            else
+            {
                 lstContacts.Columns.Add("Name", 150);
                 lstContacts.Items.Add(new ListViewItem("No Saved Contacts"));
             }
