@@ -81,8 +81,8 @@ WinForms application for the Virtual Contact Management System designed in the l
 	- View All Contacts
 		- [x] On click, open "ViewContactsForm"
 		- ViewContactsForm
-			- [ ] ListView or GridView of *all* "Contact" details
-			- [ ] Display "No Saved Contacts" if empty
+			- [x] ListView or GridView of *all* "Contact" details
+			- [x] Display "No Saved Contacts" if empty
 	- Search Contact
 		- [ ] On click, open "SearchContactForm"
 		- SearchContactForm

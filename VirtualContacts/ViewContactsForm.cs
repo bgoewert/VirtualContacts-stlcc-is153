@@ -16,21 +16,23 @@ namespace VirtualContacts
         {
             InitializeComponent();
 
-            // Create columns
-            lstContacts.Columns.Add("Name", 150);
-            lstContacts.Columns.Add("Age");
-            lstContacts.Columns.Add("PhoneNumber", 100);
-            lstContacts.Columns.Add("EmailAddress", 100);
-            lstContacts.Columns.Add("PreferredContactMethod", 180);
-            lstContacts.Columns.Add("DayOfBirth", 80);
-            lstContacts.Columns.Add("StreetAddress", 100);
-
-            // Add list items
-            foreach (Contact contact in MainForm.Contacts.Values)
+            if (MainForm.Contacts.Count > 0)
             {
-                ListViewItem item = new ListViewItem(contact.Name);
+                // Create columns
+                lstContacts.Columns.Add("Name", 150);
+                lstContacts.Columns.Add("Age");
+                lstContacts.Columns.Add("PhoneNumber", 100);
+                lstContacts.Columns.Add("EmailAddress", 100);
+                lstContacts.Columns.Add("PreferredContactMethod", 180);
+                lstContacts.Columns.Add("DayOfBirth", 80);
+                lstContacts.Columns.Add("StreetAddress", 100);
 
-                string[] subItems = {
+                // Add list items
+                foreach (Contact contact in MainForm.Contacts.Values)
+                {
+                    ListViewItem item = new ListViewItem(contact.Name);
+
+                    string[] subItems = {
                     contact.Age.ToString(),
                     contact.PhoneNumber,
                     contact.EmailAddress,
@@ -39,8 +41,13 @@ namespace VirtualContacts
                     contact.StreetAddress
                 };
 
-                item.SubItems.AddRange(subItems);
-                lstContacts.Items.Add(item);
+                    item.SubItems.AddRange(subItems);
+                    lstContacts.Items.Add(item);
+                }
+            }
+            else {
+                lstContacts.Columns.Add("Name", 150);
+                lstContacts.Items.Add(new ListViewItem("No Saved Contacts"));
             }
         }
     }

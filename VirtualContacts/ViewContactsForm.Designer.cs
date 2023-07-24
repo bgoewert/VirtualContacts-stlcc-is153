@@ -48,7 +48,7 @@
             ClientSize = new Size(722, 239);
             Controls.Add(lstContacts);
             Name = "ViewContactsForm";
-            Text = "ViewContactsForm";
+            Text = "View All Contacts";
             ResumeLayout(false);
         }
 
