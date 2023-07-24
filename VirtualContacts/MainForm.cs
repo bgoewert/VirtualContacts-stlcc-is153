@@ -15,5 +15,14 @@
             NewContactForm newContactForm = new NewContactForm();
             newContactForm.ShowDialog();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Are you sure you want to exit the application?", "Exit Confirmation", MessageBoxButtons.YesNo);
+            if (confirm == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

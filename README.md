@@ -90,6 +90,6 @@ WinForms application for the Virtual Contact Management System designed in the l
 			- [ ] If found, display matching contact in "ContactForm"
 			- [ ] If no match found, display MessageBox "No Contact found matching that name."
 	- Exit
-		- [ ] On click, Close application.
-		- [ ] (Optional) Confirmation before exiting.
+		- [x] On click, Close application.
+		- [x] (Optional) Confirmation before exiting.
 4. [ ] Test and debug
