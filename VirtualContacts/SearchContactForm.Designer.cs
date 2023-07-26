@@ -58,11 +58,13 @@
             ClientSize = new Size(315, 46);
             Controls.Add(btnSearch);
             Controls.Add(txtContactName);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "SearchContactForm";
             Text = "Search Contact";
             TopMost = true;
+            Load += SearchContactForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
