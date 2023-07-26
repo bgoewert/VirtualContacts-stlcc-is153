@@ -96,4 +96,4 @@ WinForms application for the Virtual Contact Management System designed in the l
 	- Exit
 		- [x] On click, Close application.
 		- [x] (Optional) Confirmation before exiting.
-4. [ ] Test and debug
+4. [x] Test and debug
