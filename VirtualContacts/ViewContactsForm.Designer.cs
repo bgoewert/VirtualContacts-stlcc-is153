@@ -34,6 +34,7 @@
             // lstContacts
             // 
             lstContacts.Dock = DockStyle.Fill;
+            lstContacts.FullRowSelect = true;
             lstContacts.Location = new Point(0, 0);
             lstContacts.Name = "lstContacts";
             lstContacts.Size = new Size(784, 241);
